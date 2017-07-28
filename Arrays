@@ -1,0 +1,45 @@
+
+public class Arrays {
+
+	public static void main(String []args) {
+		int[] array = {1,2,3,4,5,6,7,8,9,10};
+		
+		System.out.println(sumOfNumbers(array));		
+		printList(array);		
+		System.out.println();
+		addOneToValues(array);
+		printList(array);
+		System.out.println();
+		addOneToListMember(array);
+		printList(array);
+		
+	}
+	
+	public static int sumOfNumbers(int[] arr) {
+		int sum=0;
+		for (int i:arr){
+			sum+=i;
+		}
+		return sum;
+	}
+	
+	public static void printList(int[] array) {
+		for(int i=array.length-1;i>=0;i--) {
+			System.out.print(array[i]+" ");
+		}
+	}
+	
+	public static void addOneToValues(int[] arr) {
+		int num=0;
+		for(int i=0;i<arr.length;i++) {
+			num=arr[i];
+			num+=1;
+		}
+	}
+	
+	public static void addOneToListMember(int[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			arr[i]+=1;
+		}
+	}
+}
