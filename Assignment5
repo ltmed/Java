@@ -1,0 +1,30 @@
+
+public class Assignment5 {
+	
+	public static void main (String [] args) {
+		
+		int x=3,y=2;
+		
+		System.out.println("x value is : "+x+" y value is : "+y);
+		falseSwap(x,y);
+		System.out.println("x value is : "+x+" y value is : "+y);
+		moreOperation(x,y);
+		System.out.println("x value is : "+x+" y value is : "+y);
+		
+	}
+	
+	public static void falseSwap(int a, int b) {
+		int temp=a;
+		a=b;
+		b=temp;		
+	}
+	
+	public static void moreOperation(int a,int b) {
+		a=a*b;
+		b=12;
+		System.out.println("value a is : "+a+" value b is : "+b);
+		falseSwap(a,b);
+		System.out.println("value a is : "+a+" value b is : "+b);
+	}
+
+}
