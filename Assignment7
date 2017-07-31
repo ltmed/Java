@@ -1,0 +1,47 @@
+
+public class Assignment7 {
+	
+	public static void main(String [] args) {
+		
+		
+		for(int i=-5;i<=30;i++) {
+			System.out.println(toBinary(i));
+			String a=Integer.toBinaryString(i);
+			System.out.println(a);
+		}
+	}
+	
+	public static String toBinary(int num) {
+		String temp="";
+		if(num>0) {
+		while(num!=0) {
+		if(num%2==0) {
+			temp+="0";
+			num/=2;
+		}else if(num%2==1) {
+			temp+="1";
+			num/=2;
+		}}}
+		else if(num<0) {
+			num*=-1;
+			while(num!=0) {
+				if(num%2==0) {
+					temp+="0";
+					num/=2;
+				}else if(num%2==1) {
+					temp+="1";
+					num/=2;
+				}}
+			temp+="1";
+		}else {return "0";}
+		String binary="";
+		char[] rev=temp.toCharArray();
+		for(int i=rev.length-1;i>=0;i--) {
+			binary+=rev[i];
+		}
+		
+		return binary;
+	}
+
+
+}
