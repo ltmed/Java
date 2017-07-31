@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Assignment8 {
+	
+
+	public static void main(String[] args) {		
+		Scanner s=new Scanner(System.in);
+		int num=s.nextInt();
+		
+		for(int i=2;i<=num;i++) {
+		if(isPrime(i)) {
+			System.out.print(i+" ");
+		}
+		}
+		System.out.println();
+		for(int i=2;i<=num;i++) {
+			isPrime2(i);
+		}
+		
+		
+		 }
+		
+
+
+public static boolean isPrime(int num) {	
+	for(int i=2; i<=(num/2); i++)
+		if(num%i==0)
+		return false;
+		return true;
+		 
+}
+
+public static void isPrime2(int num) {	
+	String  prime ="";
+	 int c=0; 	  
+     for(int i=num; i>=1; i--) {
+        if(num%i==0)    {
+	c = c + 1;
+    }
+ }
+ if (c == 2) {  
+    prime = prime+num;
+    System.out.print(prime+" ");
+ }	 
+  }	
+  
+}
