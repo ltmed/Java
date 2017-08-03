@@ -6,6 +6,7 @@ public class SomeArrays {
 		int[] arr1= {1,2,3,4,1,2,3};
 		printArray(arr1);
 		findTuple(arr1,5);
+		System.out.println("min number of array is = "+arr1[findMin(arr1)]);
 		bubbleSort(arr1);
 		printArray(arr1);
 		System.out.println();
@@ -14,6 +15,7 @@ public class SomeArrays {
 		int[] arr2= {1,2,3,4,5,6,7,8,9,10,11};
 		printArray(arr2);
 		findTuple(arr2,12);
+		System.out.println("min number of array is = "+arr2[findMin(arr2)]);
 		bubbleSort(arr2);
 		printArray(arr2);
 		System.out.println();
@@ -22,11 +24,10 @@ public class SomeArrays {
 		
 		int[] arr3= {11,10,9,8,7,6,5,4,3,2,1,0,-1,-2};
 		printArray(arr3);
+		System.out.println("min number of array is = "+arr3[findMin(arr3)]);
 		bubbleSort(arr3);
 		printArray(arr3);
-		System.out.println();
-		System.out.println();
-		System.out.println("min number of array is + "+arr3[findMin(arr3)]);
+		
 		
 		
 		
